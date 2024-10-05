@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/PowerTestBench">
+    <file alias="qmldir">C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml/PowerTestBench/qmldir</file>
+  </qresource>
+</RCC>
+

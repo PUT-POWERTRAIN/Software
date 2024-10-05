@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/PowerTestBench/">
+    <file alias="DirectoryFontLoader.qml">C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench/PowerTestBench/DirectoryFontLoader.qml</file>
+    <file alias="Constants.qml">C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench/PowerTestBench/Constants.qml</file>
+    <file alias="EventListModel.qml">C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench/PowerTestBench/EventListModel.qml</file>
+    <file alias="EventListSimulator.qml">C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench/PowerTestBench/EventListSimulator.qml</file>
+  </qresource>
+</RCC>
+

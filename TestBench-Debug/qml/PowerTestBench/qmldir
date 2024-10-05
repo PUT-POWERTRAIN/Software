@@ -1,0 +1,11 @@
+module PowerTestBench
+linktarget PowerTestBenchplugin
+optional plugin PowerTestBenchplugin
+classname PowerTestBenchPlugin
+typeinfo PowerTestBench.qmltypes
+prefer :/qt/qml/PowerTestBench/
+DirectoryFontLoader 1.0 DirectoryFontLoader.qml
+singleton Constants 1.0 Constants.qml
+EventListModel 1.0 EventListModel.qml
+EventListSimulator 1.0 EventListSimulator.qml
+

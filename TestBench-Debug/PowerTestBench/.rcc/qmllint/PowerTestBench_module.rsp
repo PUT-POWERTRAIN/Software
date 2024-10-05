@@ -1,0 +1,12 @@
+-I
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml
+-I
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml
+-I
+C:/Qt/6.7.2/mingw_64/./qml
+--resource
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBench/.qt/rcc/qmake_PowerTestBench.qrc
+--resource
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBench/.qt/rcc/PowerTestBench_raw_qml_0.qrc
+--module
+PowerTestBench

@@ -1,0 +1,12 @@
+-I
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml
+-I
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml
+-I
+C:/Qt/6.7.2/mingw_64/./qml
+--resource
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/Generated/QtQuick3D/Dron_V4__1_/.qt/rcc/qmake_Generated_QtQuick3D_Dron_V4__1_.qrc
+--resource
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/Generated/QtQuick3D/Dron_V4__1_/.qt/rcc/Generated_QtQuick3D_Dron_V4__1__raw_qml_0.qrc
+--module
+Generated.QtQuick3D.Dron_V4__1_

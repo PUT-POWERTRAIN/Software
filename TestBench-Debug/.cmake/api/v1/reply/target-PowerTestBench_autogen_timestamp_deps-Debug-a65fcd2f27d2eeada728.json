@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"PowerTestBench/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "PowerTestBench_tooling::@23113f1d0527aeac91db"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "PowerTestBench_autogen_timestamp_deps::@23113f1d0527aeac91db",
+	"isGeneratorProvided" : true,
+	"name" : "PowerTestBench_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "PowerTestBench",
+		"source" : "PowerTestBench"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,1136 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "PowerTestBenchContent/libPowerTestBenchContent.a"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"add_dependencies",
+			"qt6_target_qml_sources",
+			"qt6_add_qml_module",
+			"target_link_libraries",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"set_source_files_properties",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"_qt_internal_target_enable_qmlcachegen",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"PowerTestBenchContent/CMakeLists.txt",
+			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:743:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2682,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2564,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2659,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 647,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 2751,
+				"parent" : 6
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 392,
+				"parent" : 5
+			},
+			{
+				"command" : 9,
+				"file" : 2,
+				"line" : 541,
+				"parent" : 5
+			},
+			{
+				"command" : 8,
+				"file" : 2,
+				"line" : 3103,
+				"parent" : 9
+			},
+			{
+				"command" : 11,
+				"file" : 2,
+				"line" : 2903,
+				"parent" : 9
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 1415,
+				"parent" : 11
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 3069,
+				"parent" : 9
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 3093,
+				"parent" : 9
+			},
+			{
+				"command" : 15,
+				"file" : 2,
+				"line" : 590,
+				"parent" : 5
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 15
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 2390,
+				"parent" : 16
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 2004,
+				"parent" : 17
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 16,
+				"file" : 2,
+				"line" : 2639,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 1248,
+				"parent" : 20
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2535,
+				"parent" : 6
+			},
+			{
+				"command" : 10,
+				"file" : 2,
+				"line" : 2687,
+				"parent" : 6
+			},
+			{
+				"command" : 15,
+				"file" : 2,
+				"line" : 2770,
+				"parent" : 6
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 45
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 2390,
+				"parent" : 46
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 2004,
+				"parent" : 47
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 18,
+				"file" : 3,
+				"line" : 1,
+				"parent" : 49
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 768,
+				"parent" : 50
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 2117,
+				"parent" : 51
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent"
+				},
+				{
+					"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench/PowerTestBenchContent"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/PowerTestBenchContent_autogen/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				29
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -g -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-Wa,-mbig-obj"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 8,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLBUILTINS_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent"
+				},
+				{
+					"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench/PowerTestBenchContent"
+				},
+				{
+					"backtrace" : 0,
+					"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/PowerTestBenchContent_autogen/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml/6.7.2/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore/6.7.2/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins/6.7.2/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlBuiltins"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQml"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 10,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.2/mingw_64/include/QtNetwork"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "PowerTestBenchContent_tooling::@c0685f07221e56090ce8"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PowerTestBenchContent_autogen::@c0685f07221e56090ce8"
+		},
+		{
+			"id" : "PowerTestBenchContent_autogen_timestamp_deps::@c0685f07221e56090ce8"
+		}
+	],
+	"id" : "PowerTestBenchContent::@c0685f07221e56090ce8",
+	"name" : "PowerTestBenchContent",
+	"nameOnDisk" : "libPowerTestBenchContent.a",
+	"paths" : 
+	{
+		"build" : "PowerTestBenchContent",
+		"source" : "PowerTestBenchContent"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files\\Generated",
+			"sourceIndexes" : 
+			[
+				0,
+				35
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				4,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				30,
+				31,
+				32,
+				55,
+				56,
+				57,
+				58
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3,
+				5,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				29
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				33,
+				34
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/PowerTestBenchContent_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/meta_types/qt6powertestbenchcontent_debug_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/powertestbenchcontent_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 18,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.qt/rcc/qrc_qmake_PowerTestBenchContent.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 19,
+			"path" : "PowerTestBenchContent/App.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 21,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 22,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_App_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 23,
+			"path" : "PowerTestBenchContent/MenuBarFinal.ui.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_MenuBarFinal.ui_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 25,
+			"path" : "PowerTestBenchContent/ControlMenu.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_ControlMenu_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 27,
+			"path" : "PowerTestBenchContent/DataMenu.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 28,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_DataMenu_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 29,
+			"path" : "PowerTestBenchContent/DataMenu_saveType.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 30,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_DataMenu_saveType_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 31,
+			"path" : "PowerTestBenchContent/Battery.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 32,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Battery_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 33,
+			"path" : "PowerTestBenchContent/Screen01.ui.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 34,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Screen01.ui_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 35,
+			"path" : "PowerTestBenchContent/PlusMinusButtons.ui.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 36,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_PlusMinusButtons.ui_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 37,
+			"path" : "PowerTestBenchContent/Research.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 38,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Research_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 39,
+			"path" : "PowerTestBenchContent/Control3D.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 40,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Control3D_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 41,
+			"path" : "PowerTestBenchContent/SpeedMeter.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 42,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_SpeedMeter_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 43,
+			"path" : "PowerTestBenchContent/images/ExitButton.ui.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 44,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_images/ExitButton.ui_qml.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 48,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.qt/rcc/qrc_PowerTestBenchContent_raw_qml_0.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 52,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.qt/rcc/qmake_PowerTestBenchContent.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml/PowerTestBenchContent/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.qt/rcc/PowerTestBenchContent_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 52,
+			"path" : "PowerTestBenchContent/images/rotate-left-circular-arrow-interface-symbol.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 52,
+			"path" : "PowerTestBenchContent/images/rect1.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/PowerTestBenchContent_autogen/timestamp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/meta_types/qt6powertestbenchcontent_debug_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/powertestbenchcontent_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.qt/rcc/qrc_qmake_PowerTestBenchContent.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_App_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_MenuBarFinal.ui_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_ControlMenu_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_DataMenu_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_DataMenu_saveType_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Battery_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Screen01.ui_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_PlusMinusButtons.ui_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Research_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_Control3D_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_SpeedMeter_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.rcc/qmlcache/PowerTestBenchContent_images/ExitButton.ui_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/.qt/rcc/qrc_PowerTestBenchContent_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/PowerTestBenchContent_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/meta_types/PowerTestBenchContent_json_file_list.txt.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.7.2/mingw_64/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.7.2/mingw_64/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.7.2/mingw_64/metatypes/qt6qmlbuiltins_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 8,
+			"path" : "C:/Qt/6.7.2/mingw_64/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

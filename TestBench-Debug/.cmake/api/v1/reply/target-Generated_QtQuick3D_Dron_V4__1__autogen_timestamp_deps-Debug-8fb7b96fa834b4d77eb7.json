@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"Generated/QtQuick3D/Dron_V4__1_/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Generated_QtQuick3D_Dron_V4__1__tooling::@16c427c92c264318f045"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "Generated_QtQuick3D_Dron_V4__1__autogen_timestamp_deps::@16c427c92c264318f045",
+	"isGeneratorProvided" : true,
+	"name" : "Generated_QtQuick3D_Dron_V4__1__autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "Generated/QtQuick3D/Dron_V4__1_",
+		"source" : "Generated/QtQuick3D/Dron_V4__1_"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -9,7 +9,7 @@
 
 #include "autogen/environment.h"
 #include "App/connection.h"
-#include "App/measuresetup.h".h"
+#include "App/measuresetup.h"
 
 measureSetup *globalMeasureSetup = nullptr;
 

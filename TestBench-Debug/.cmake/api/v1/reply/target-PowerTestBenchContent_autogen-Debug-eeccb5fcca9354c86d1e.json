@@ -1,0 +1,75 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"PowerTestBenchContent/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "PowerTestBenchContent_autogen_timestamp_deps::@c0685f07221e56090ce8"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "PowerTestBenchContent_autogen::@c0685f07221e56090ce8",
+	"isGeneratorProvided" : true,
+	"name" : "PowerTestBenchContent_autogen",
+	"paths" : 
+	{
+		"build" : "PowerTestBenchContent",
+		"source" : "PowerTestBenchContent"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/CMakeFiles/PowerTestBenchContent_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/CMakeFiles/PowerTestBenchContent_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBenchContent/PowerTestBenchContent_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

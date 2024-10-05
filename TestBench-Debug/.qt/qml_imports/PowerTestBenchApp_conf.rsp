@@ -1,0 +1,11 @@
+-rootPath
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench
+-cmake-output
+-output-file
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/.qt/qml_imports/PowerTestBenchApp_conf.cmake
+-importPath
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/qml
+-importPath
+C:/Qt/6.7.2/mingw_64/./qml
+-qrcFiles
+C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/.qt/rcc/configuration.qrc

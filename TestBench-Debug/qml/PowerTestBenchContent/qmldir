@@ -1,0 +1,19 @@
+module PowerTestBenchContent
+linktarget PowerTestBenchContentplugin
+optional plugin PowerTestBenchContentplugin
+classname PowerTestBenchContentPlugin
+typeinfo PowerTestBenchContent.qmltypes
+prefer :/qt/qml/PowerTestBenchContent/
+App 1.0 App.qml
+MenuBarFinal 1.0 MenuBarFinal.ui.qml
+ControlMenu 1.0 ControlMenu.qml
+DataMenu 1.0 DataMenu.qml
+DataMenu_saveType 1.0 DataMenu_saveType.qml
+Battery 1.0 Battery.qml
+Screen01 1.0 Screen01.ui.qml
+PlusMinusButtons 1.0 PlusMinusButtons.ui.qml
+Research 1.0 Research.qml
+Control3D 1.0 Control3D.qml
+SpeedMeter 1.0 SpeedMeter.qml
+ExitButton 1.0 images/ExitButton.ui.qml
+
