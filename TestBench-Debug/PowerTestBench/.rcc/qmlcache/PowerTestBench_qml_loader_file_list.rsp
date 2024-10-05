@@ -1,8 +1,0 @@
---resource
-C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBench/.qt/rcc/qmake_PowerTestBench.qrc
---resource
-C:/Users/Vest3/Desktop/WersjaZGita/Software/TestBench-Debug/PowerTestBench/.qt/rcc/PowerTestBench_raw_qml_0.qrc
-/qt/qml/PowerTestBench/DirectoryFontLoader.qml
-/qt/qml/PowerTestBench/Constants.qml
-/qt/qml/PowerTestBench/EventListModel.qml
-/qt/qml/PowerTestBench/EventListSimulator.qml
