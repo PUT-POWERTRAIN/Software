@@ -151,6 +151,12 @@ Window {
                 z: 0
             }
 
+            SpeedMeter {
+                id: speedMeter
+                x: 0
+                y: 1
+            }
+
             //MOJE
             DataMenu {
                 id: dataMenu
@@ -163,10 +169,12 @@ Window {
 
             Battery {
                 id: battery
-                x: 77
-                y: 466
-                width: 211
-                height: 209
+                width: parent.width/12
+                height: parent.width/12
+                anchors.top: parent.top
+                anchors.topMargin: parent.height*0.065
+
+                anchors.horizontalCenter: parent.horizontalCenter
             }
 
             Research {
@@ -177,11 +185,7 @@ Window {
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
-            SpeedMeter {
-                id: speedMeter
-                x: 0
-                y: 1
-            }
+
 
 
             // Dron_V4__1_ {
@@ -208,14 +212,14 @@ Window {
 
         Control3D {
             id: control3D
-            x: 1536
-            y: 730
+            x: 840
+            y: 833
             width: parent.width/8
             height: parent.height/6
             anchors.right: parent.right
             anchors.bottom: menuBarFinal.top
-            anchors.rightMargin: 0
-            anchors.bottomMargin: 0
+            anchors.rightMargin: 840
+            anchors.bottomMargin: -8
         }
 
 
@@ -243,6 +247,24 @@ Window {
             anchors.leftMargin: parent.width / 2 - width / 2
             anchors.bottomMargin: parent.height - height
             layer.enabled: false
+        }
+
+        SpeedMeter {
+            id: speedMeter1
+            x: 1612
+            y: 69
+        }
+
+        SpeedMeter {
+            id: speedMeter2
+            x: 1620
+            y: 693
+        }
+
+        SpeedMeter {
+            id: speedMeter3
+            x: 0
+            y: 713
         }
     }
 
@@ -336,6 +358,6 @@ Window {
 
 /*##^##
 Designer {
-    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
+    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:11}D{i:17}D{i:18}D{i:19}
 }
 ##^##*/
