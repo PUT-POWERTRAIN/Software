@@ -183,6 +183,12 @@ Window {
                 visible: false
             }
 
+            SpeedMeter {
+                id: speedMeter
+                x: 0
+                y: 1
+            }
+
 
             // Dron_V4__1_ {
             //     id: dron_V4__1_2
