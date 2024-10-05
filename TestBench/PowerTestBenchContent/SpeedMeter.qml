@@ -282,7 +282,8 @@ Rectangle {
 
         Text {
             id: text1
-            color: root.colorB
+            //color: root.colorB
+            color: "white"
             anchors.bottom: parent.top
             anchors.bottomMargin: root.size * 0.02
             anchors.horizontalCenter: parent.horizontalCenter
@@ -294,7 +295,8 @@ Rectangle {
 
         Text {
             id: volts
-            color: root.colorB
+            //color: root.colorB
+            color: "white"
             anchors.top: parent.bottom
             anchors.topMargin: root.size * 0.02
             anchors.horizontalCenter: parent.horizontalCenter
