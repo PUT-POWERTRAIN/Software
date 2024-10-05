@@ -155,6 +155,7 @@ Window {
             DataMenu {
                 id: dataMenu
                 visible: false
+                color: "#000000"
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
 
@@ -174,6 +175,12 @@ Window {
                 visible: false
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
+            }
+
+            SpeedMeter {
+                id: speedMeter
+                x: 0
+                y: 1
             }
 
 

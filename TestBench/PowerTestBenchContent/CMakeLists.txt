@@ -19,6 +19,7 @@ qt6_add_qml_module(PowerTestBenchContent
 		"DataMenu_saveType.qml"
 		"MenuBarFinal.ui.qml"
 		"Research.qml"
+		"SpeedMeter.qml"
 		"images/ExitButton.ui.qml"
 	RESOURCES
 		"images/rect1.png"
