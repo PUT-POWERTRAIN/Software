@@ -9,16 +9,16 @@ qt6_add_qml_module(PowerTestBenchContent
     VERSION 1.0
     RESOURCE_PREFIX "/qt/qml"
 	QML_FILES
-		"DataMenu_saveType.qml"
-		"Battery.qml"
 		"Screen01.ui.qml"
-		"Research.qml"
 		"MenuBarFinal.ui.qml"
+		"DataMenu_saveType.qml"
 		"DataMenu.qml"
-		"ControlMenu.qml"
-		"PlusMinusButtons.ui.qml"
-		"App.qml"
 		"Control3D.qml"
+		"Battery.qml"
+		"App.qml"
+		"ControlMenu.qml"
+		"Research.qml"
+		"PlusMinusButtons.ui.qml"
 		"images/ExitButton.ui.qml"
 	RESOURCES
 		"images/rotate-left-circular-arrow-interface-symbol.png"
