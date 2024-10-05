@@ -151,16 +151,6 @@ Window {
                 z: 0
             }
 
-            Button {
-                id: button
-                x: 1219
-                y: 954
-                text: qsTr("Button")
-                onClicked: {
-                    //class1.motorSignalChangeTo(controlMenuTest2.motorThrust, 1);
-                    console.log("Message1: " + hehe.getMessage1())
-                }
-            }
             //MOJE
             DataMenu {
                 id: dataMenu
@@ -172,15 +162,18 @@ Window {
 
             Battery {
                 id: battery
-                x: 117
-                y: 557
+                x: 77
+                y: 466
+                width: 211
+                height: 209
             }
 
             Research {
                 id: studyMenu
-                x: 246
-                y: 307
+
                 visible: false
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
             }
 
 
@@ -254,6 +247,7 @@ Window {
         else {
             controlMenu.visible = true
             control3D.visible = true
+            battery.visible = true
         }
         if (dataMenu.visible===true)
         {    
@@ -269,10 +263,12 @@ Window {
         if (dataMenu.visible === true){
             dataMenu.visible = false
             control3D.visible = true
+            battery.visible = true
         }
         else{
             dataMenu.visible = true
             control3D.visible = false
+            battery.visible = false
         }
         if (controlMenu.visible===true)
         {
@@ -299,6 +295,23 @@ Window {
         if (dataMenu.visible===true)
         {
             dataMenu.visible=false
+            control3D.visible = true
+            battery.visible = true
+        }
+    }
+    function showOverviewMenu()
+    {
+        if (controlMenu.visible === true){
+            controlMenu.visible = false
+        }
+        if (dataMenu.visible === true){
+            dataMenu.visible = false
+            control3D.visible = true
+            battery.visible = true
+        }
+        if (studyMenu.visible===true)
+        {
+            studyMenu.visible=false
         }
     }
 }

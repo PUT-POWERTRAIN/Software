@@ -1,24 +1,22 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 
-Rectangle {
+Item {
 
-    property real batteryPercent: 0.03; //must be between 0-1
+    property real batteryPercent: 0.75; //must be between 0-1
 
     id: root
     width: 100
     height: 100
-    color: "#ffffff"
     opacity: 1
 
-    Rectangle {
+    Item {
         id: batterySpace
         width: root.width * 0.8
         height: root.height * 0.4
-        border.width: 0
+        //border.width: 0
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
-
         Rectangle {
             id: batteryBar
             width: parent.width*0.9
@@ -27,7 +25,7 @@ Rectangle {
             border.width: 0.02 * root.width
             radius: 0.06 * root.width
             color: "transparent"
-
+            border.color: "white"
             Rectangle{
 
 
@@ -53,6 +51,7 @@ Rectangle {
                 anchors.leftMargin: parent.border.width
                 color: Qt.rgba(mapColour(root.batteryPercent)[0], mapColour(root.batteryPercent)[1], mapColour(root.batteryPercent)[2], 1)
                 z: -1
+
             }
 
             Text {
@@ -62,6 +61,7 @@ Rectangle {
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.bold: true
                 font.pointSize: 0.4 * parent.height
+                color: "white"
             }
         }
 
@@ -72,9 +72,9 @@ Rectangle {
             border.width: 0.01 * root.width
             anchors.verticalCenter: parent.verticalCenter
             anchors.right: parent.right
-            color: "black"
+            color: "white"
             radius: 0.1 * root.width
-
+            border.color: "white"
             Rectangle {
                 id: batteryHeadCover
                 width: 0.5 * parent.width
@@ -82,7 +82,8 @@ Rectangle {
                 border.width: 0.01 * root.width
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
-                color: "black"
+                color: "white"
+                border.color: "white"
                 radius: 0.01 * root.width
             }
         }

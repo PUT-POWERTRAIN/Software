@@ -26,6 +26,10 @@ Rectangle {
         checkable: true
         display: AbstractButton.IconOnly
         width: parent.width / 5
+        Connections {
+            target: overviewButton
+            onClicked: mainWindow.showOverviewMenu()
+        }
         background: Rectangle {
             id: overviewButtonBack
             //color: "#232323"
