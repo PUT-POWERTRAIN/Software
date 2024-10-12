@@ -39,7 +39,7 @@ Rectangle {
             id: overviewContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            /*IconImage {
                 id: overviewButtonIcon
                 height: parent.height
                 source: "../speedometer.png"  // Ścieżka do ikony
@@ -50,7 +50,7 @@ Rectangle {
                 anchors.bottom: parent.bottom
                 anchors.rightMargin: 100
                 anchors.bottomMargin: 0
-            }
+            }*/
             Text {
                 id: overviewButtonText
                 color: "#ffffff"
@@ -85,7 +85,7 @@ Rectangle {
             id: controlButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            /*IconImage {
                 id: controlButtonIcon
                 height: parent.height
                 source: "../settings (2).png"  // Ścieżka do ikony
@@ -96,7 +96,7 @@ Rectangle {
                 anchors.bottom: parent.bottom
                 anchors.rightMargin: 100
                 anchors.bottomMargin: 0
-            }
+            }*/
             Text {
                 id: controlButtonText
                 color: "#ffffff"
@@ -130,7 +130,7 @@ Rectangle {
             id: dataButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            /*IconImage {
                 id: dataButtonIcon
                 height: parent.height
                 source: "../data.png"  // Ścieżka do ikony
@@ -141,7 +141,7 @@ Rectangle {
                 anchors.bottom: parent.bottom
                 anchors.rightMargin: 100
                 anchors.bottomMargin: 0
-            }
+            }*/
             Text {
                 id: dataButtonText
                 color: "#ffffff"
@@ -178,7 +178,7 @@ Rectangle {
             id: studyButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            /*IconImage {
                 id: studyButtonIcon
                 height: parent.height
                 source: "../analisys (4).png"
@@ -191,7 +191,7 @@ Rectangle {
                 anchors.bottom: parent.bottom
                 anchors.rightMargin: 100
                 anchors.bottomMargin: 0
-            }
+            }*/
             Text {
                 id: studyButtonText
                 color: "#ffffff"
@@ -222,7 +222,7 @@ Rectangle {
             id: settingsButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            /*IconImage {
                 id: settingsButtonIcon
                 height: parent.height
                 source: "../setting.png"
@@ -235,7 +235,7 @@ Rectangle {
                 anchors.bottom: parent.bottom
                 anchors.rightMargin: 100
                 anchors.bottomMargin: 0
-            }
+            }*/
             Text {
                 id: settingsButtonText
                 color: "#ffffff"

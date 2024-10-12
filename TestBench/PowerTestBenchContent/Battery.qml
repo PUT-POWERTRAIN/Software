@@ -43,7 +43,7 @@ Item {
 
                 id: batteryGraphicalLevel
                 height: parent.height - 2*parent.border.width
-                width: (parent.width - 2*parent.border.width) * batteryPercent
+                width: (parent.width - 2*parent.border.width) * root.batteryPercent
                 radius: parent.radius - parent.border.width
                 border.width: 0
                 anchors.verticalCenter: parent.verticalCenter

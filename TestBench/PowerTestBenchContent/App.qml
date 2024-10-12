@@ -170,12 +170,29 @@ Window {
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
+            //NIE MOJE (ukradzione z kodu niżej)
+            ShaderEffectSource {
+                id: studyMenuEffect
+                sourceItem: studyMenu
+                smooth: true
+                live: true
+                width: studyMenu.width
+                height: studyMenu.height
+                opacity: 0.65  // Ustawienie przezroczystości na całą grupę
+                visible: studyMenu.visible
+                // Ustawienie pozycji tak, aby pasowała do ControlMenu
+                x: studyMenu.x
+                y: studyMenu.y
+            }
             Research {
                 id: studyMenu
 
                 visible: false
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
+
+                opacity: 0  // Ustawienie przezroczystości na 0, aby nie wyświetlał się bezpośrednio
+                layer.enabled: false
             }
 
 

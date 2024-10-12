@@ -3,31 +3,47 @@ import QtQuick.Controls 2.15
 import QtQuick.Layouts
 
 Rectangle {
-
-    property color textColor: Qt.rgba(0.92, 0.8, 1, 1)
-    property color placholderTextColor: Qt.rgba(0.92, 0.8, 1, 0.4)
-    property color bckgrColor: Qt.rgba(0.07, 0.05, 0.2, 1)
-    property color bckgrColorB: Qt.rgba(0.12, 0.05, 0.24, 1)
+    property color textColor: Qt.rgba(0.9, 0.9, 0.9, 1)
+    property color placholderTextColor: Qt.rgba(0.9, 0.9, 0.9, 0.6)
     property color fieldsColor: Qt.rgba(0.3, 0.3, 0.3, 0.3)
-    property color ticksColor: Qt.rgba(0.7, 0.7, 0.8, 0.6)
-    property color graphLineColor: Qt.rgba(0.8, 0.04, 0.08, 1);
+    property color ticksColor: Qt.rgba(0.9, 0.9, 0.9, 0.6)
+    property string graphLineColor: "#2cf8f1"
 
     id: root
     width: 800
     height: 600
-    //color: bckgrColor
+
+    border.color: "#434343"
+    border.width: 1
 
     gradient: Gradient {
-        GradientStop { position: 0.0; color: bckgrColor }
-        GradientStop { position: 1.0; color: bckgrColorB }
+        GradientStop {
+            id: gradientStop
+            position: 1
+            color: "#191818"
+        }
+
+        GradientStop {
+            position: 0.77193
+            color: "#242424"
+        }
+
+        orientation: Gradient.Vertical
+        GradientStop {
+            position: 0
+            color: "#111111"
+        }
+
+        GradientStop {
+            position: 0.89474
+            color: "#242424"
+        }
     }
 
     property int widthval
     property int heightval
     property int oldX
     property int oldY
-
-
 
     Item {
         width: 0.68 * root.width
@@ -39,7 +55,7 @@ Rectangle {
             width: parent.width
             height: parent.height
 
-            color: fieldsColor;
+            color: root.fieldsColor;
 
             Repeater{
                 model: 13
@@ -49,7 +65,7 @@ Rectangle {
                     height: parent.height
                     border.width: 0
                     x: index/12 * parent.width - width/2;
-                    color: ticksColor
+                    color: root.ticksColor
                 }
             }
 
@@ -61,7 +77,7 @@ Rectangle {
                     height: (index%2==0)? parent.height * 0.005 : parent.height * 0.01
                     border.width: 0
                     y: index/10 * parent.height - height/2;
-                    color: ticksColor
+                    color: root.ticksColor
                 }
             }
 
@@ -72,16 +88,16 @@ Rectangle {
                     var ctx = getContext("2d");
                     ctx.reset();
                     ctx.moveTo(0, 0)
-                    ctx.strokeStyle = graphLineColor;
+                    ctx.strokeStyle = root.graphLineColor;
                     ctx.lineWidth = parent.height * 0.015;
-                    oldX = 0
+                    root.oldX = 0
                     for( var i = 0; i < taskModel.rowCount(); i++ ) {
                         var widthval = width * taskModel.get(i).duration / commandsList.seconds
                         var heightval = height * (1 - taskModel.get(i).power / 100)
-                        ctx.moveTo(oldX, heightval)
-                        ctx.lineTo(oldX + widthval, heightval)
-                        oldX += widthval
-                        oldY = heightval
+                        ctx.moveTo(root.oldX, heightval)
+                        ctx.lineTo(root.oldX + widthval, heightval)
+                        root.oldX += widthval
+                        root.oldY = heightval
                         ctx.stroke()
                     }
                 }
@@ -106,7 +122,7 @@ Rectangle {
                 x: parent.width/12 + index/6 * parent.width - width/2
                 verticalAlignment: Text.AlignVCenter
 
-                color: textColor;
+                color: root.textColor;
             }
         }
     }
@@ -128,7 +144,7 @@ Rectangle {
                 y: (parent.height/10) + (index/5) * parent.height - height/2
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: textColor;
+                color: root.textColor;
             }
         }
     }
@@ -144,7 +160,7 @@ Rectangle {
         font.pointSize: 60
         fontSizeMode: Text.Fit
 
-        color: textColor;
+        color: root.textColor;
     }
 
     Rectangle{
@@ -158,7 +174,7 @@ Rectangle {
         height: 0.5 * root.height
         radius: 0.02 * root.height
 
-        color: fieldsColor;
+        color: root.fieldsColor;
 
         ListView {
             id: taskListView
@@ -186,7 +202,7 @@ Rectangle {
                         text: model.power + "%"
                         horizontalAlignment: Text.AlignHCenter
                         font.pixelSize: 20
-                        color: textColor
+                        color: root.textColor
                     }
                     Text {
                         Layout.fillWidth: true
@@ -194,7 +210,7 @@ Rectangle {
                         text: model.duration + "s"
                         horizontalAlignment: Text.AlignHCenter
                         font.pixelSize: 20
-                        color: textColor
+                        color: root.textColor
                     }
                     Button {
                         Layout.fillWidth: true
@@ -207,8 +223,8 @@ Rectangle {
                             canvas.requestPaint()
                         }
 
-                        background: Rectangle {color: fieldsColor;}
-                        palette.buttonText: textColor
+                        background: Rectangle {color: root.fieldsColor;}
+                        palette.buttonText: root.textColor
                     }
                 }
             }
@@ -224,10 +240,10 @@ Rectangle {
         font.pixelSize: 0.4 * height
         placeholderText: "30 (%)"
 
-        placeholderTextColor: placholderTextColor;
-        color: textColor
+        placeholderTextColor: root.placholderTextColor;
+        color: root.textColor
 
-        background: Rectangle {color: fieldsColor;}
+        background: Rectangle {color: root.fieldsColor;}
     }
 
     TextField {
@@ -239,10 +255,10 @@ Rectangle {
         font.pixelSize: 0.4 * height
         placeholderText: "5 (s)"
 
-        placeholderTextColor: placholderTextColor;
-        color: textColor
+        placeholderTextColor: root.placholderTextColor;
+        color: root.textColor
 
-        background: Rectangle {color: fieldsColor;}
+        background: Rectangle {color: root.fieldsColor;}
     }
 
     Item{
@@ -267,8 +283,8 @@ Rectangle {
                 }
             }
 
-            background: Rectangle {color: fieldsColor;}
-            palette.buttonText: textColor
+            background: Rectangle {color: root.fieldsColor;}
+            palette.buttonText: root.textColor
         }
 
         Button {
@@ -278,14 +294,8 @@ Rectangle {
             font.pixelSize: 0.2 * width
             text: "Run"
 
-            background: Rectangle {color: fieldsColor;}
-            palette.buttonText: textColor
+            background: Rectangle {color: root.fieldsColor;}
+            palette.buttonText: root.textColor
         }
     }
 }
-
-
-
-
-
-

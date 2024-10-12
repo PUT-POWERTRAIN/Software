@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-//import Qt5Compat.GraphicalEffects
+import Qt5Compat.GraphicalEffects
 import QtQuick.Shapes
 
 /*
@@ -14,13 +14,15 @@ Rectangle {
 
     property real angSpeed: 4
     property real speed: 4000
-    property real voltage: 12
+    property real amper: 0
 
-    property real speedMax: 10000
+    property real speedMax: 20000
 
     property string colorA: "#121529"
-    //property string colorB: "#2c75ff"
+    property string colorB: "#daf5fe"
     property string colorC: "#2cf8f1"
+
+    property int size: Math.min(width, height)
 
     id: root
     width: 300
@@ -35,8 +37,6 @@ Rectangle {
         var radians = (angle * Math.PI) / 180
         return [centerX + radius * Math.cos(radians), centerY + radius * Math.sin(radians)]
     }
-
-    property int size: Math.min(width, height)
 
     Item{
         opacity: 1
@@ -88,7 +88,6 @@ Rectangle {
 
                 ctx.arc(centreX, centreY, root.size * 0.4, Math.PI * 0.75, Math.PI * 2.25, false);
 
-
                 ctx.stroke();
 
             }
@@ -119,7 +118,7 @@ Rectangle {
             }
         }
 
-        /* DropShadow{
+        DropShadow{
             opacity: 1
             anchors.fill: meterFilled
             color: root.colorC
@@ -129,7 +128,7 @@ Rectangle {
             samples: 8
             source: meterFilled
             cached: true
-        } */
+        }
     }
 
 
@@ -146,6 +145,7 @@ Rectangle {
             model: stamps.totalStamps
 
             Rectangle{
+
                 required property int index
                 property int offset: (index % stamps.stampsBetween == 0) ? root.size * 0.065 : root.size * 0.05
 
@@ -166,7 +166,7 @@ Rectangle {
 
             Text {
                 required property int index
-                text: Math.round(index / (stamps.numOfStamps- 1) * root.speedMax / 1000)
+                text: Math.round(index / (stamps.numOfStamps - 1) * root.speedMax / 1000)
                 color: root.colorC
                 x: getCircularPosition(root.width / 2, root.height / 2, 0.27 * root.size, 135 + 270 * index / (stamps.numOfStamps - 1))[0] - width / 2
                 y: getCircularPosition(root.width / 2, root.height / 2, 0.27 * root.size, 135 + 270 * index / (stamps.numOfStamps - 1))[1] - height / 2
@@ -226,9 +226,9 @@ Rectangle {
         opacity: 1
         anchors.fill: values
         layer.enabled: true
-        /* layer.effect: OpacityMask {
+        layer.effect: OpacityMask {
             maskSource: values
-        } */
+        }
         Shape{
             id: spinningWheel
 
@@ -294,13 +294,13 @@ Rectangle {
         }
 
         Text {
-            id: volts
+            id: ampers
             //color: root.colorB
             color: "white"
             anchors.top: parent.bottom
             anchors.topMargin: root.size * 0.02
             anchors.horizontalCenter: parent.horizontalCenter
-            text: root.voltage + " V"
+            text: root.amper + " A"
             font.family: "Digital-7 mono"
             font.pixelSize: root.size * 0.085;
         }
@@ -308,8 +308,8 @@ Rectangle {
 
     Text {
         text: qsTr("x1000 RPM")
-        x: getCircularPosition(root.width / 2, root.height / 2, 0.48 * root.size, 400)[0] - width / 2
-        y: getCircularPosition(root.width / 2, root.height / 2, 0.48 * root.size, 400)[1] - height / 2
+        x: root.getCircularPosition(root.width / 2, root.height / 2, 0.48 * root.size, 400)[0] - width / 2
+        y: root.getCircularPosition(root.width / 2, root.height / 2, 0.48 * root.size, 400)[1] - height / 2
         font.pixelSize: root.size * 0.025
         color: root.colorC
     }
@@ -334,9 +334,9 @@ Rectangle {
 
         width: 0.6 * root.width
 
-        from: -10000
+        from: -root.speedMax
         value: 4000
-        to: 10000
+        to: root.speedMax
 
         onMoved: {
             root.speed = Math.abs(Math.round(value));

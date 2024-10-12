@@ -149,7 +149,7 @@ Rectangle {
         anchors.topMargin: parent.height/2
         palette.button: "#232323"
 
-        IconImage {
+        /*IconImage {
             id: rotateleftcirculararrowinterfacesymbol2
             width: parent.width * 0.7
             height: parent.height * 0.7
@@ -162,7 +162,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             fillMode: Image.PreserveAspectFit
 
-        }
+        }*/
 
         Connections{
             target: directionReset
@@ -179,7 +179,7 @@ Rectangle {
         anchors.topMargin: parent.height/6
         palette.button: "#232323"
 
-        IconImage {
+        /*IconImage {
             id: rotateleftcirculararrowinterfacesymbol
             width: parent.width * 0.7
             height: parent.height * 0.7
@@ -192,7 +192,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             fillMode: Image.PreserveAspectFit
 
-        }
+        }*/
         Connections{
             target: zReset
             onClicked: mainWindow.zoomReset()
