@@ -23,7 +23,8 @@ qt_standard_project_setup()
 qt_add_executable(${CMAKE_PROJECT_NAME}
     App/connection.cpp App/connection.h
     App/measureloop.cpp App/measureloop.h
-    App/measuresetup.h App/measuresetup.cpp)
+    App/measuresetup.h App/measuresetup.cpp
+    App/studysetup.h App/studysetup.cpp)
 qt_add_resources(${CMAKE_PROJECT_NAME} "configuration"
     PREFIX "/"
     FILES

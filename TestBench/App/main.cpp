@@ -10,6 +10,7 @@
 #include "autogen/environment.h"
 #include "App/connection.h"
 #include "App/measuresetup.h"
+#include "App/studysetup.h"
 
 measureSetup *globalMeasureSetup = nullptr;
 
@@ -32,6 +33,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<Connection>("Connections",1,0,"Connection");
     qmlRegisterType<measureSetup>("Measurment", 1, 0, "ReceiveMessages");
+    qmlRegisterType<StudySetup>("StudySetup",1,0,"StudyManager");
 
     const QUrl url(mainQmlFile);
     QObject::connect(

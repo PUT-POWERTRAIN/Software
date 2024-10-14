@@ -18,7 +18,7 @@ measureLoop::measureLoop(QObject *parent)
 void measureLoop::run() {
     while (true){
         receiveUdpMessage();
-        qDebug() << receivedMessage1;
+        //qDebug() << receivedMessage1;
         emit messageReceived(receivedMessage1, receivedMessage2, receivedMessage3, receivedMessage4);
         std::this_thread::sleep_for(std::chrono::milliseconds(frequency));
     }

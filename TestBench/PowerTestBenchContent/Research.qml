@@ -2,6 +2,8 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts
 
+import StudySetup 1.0
+
 Rectangle {
     property color textColor: Qt.rgba(0.9, 0.9, 0.9, 1)
     property color placholderTextColor: Qt.rgba(0.9, 0.9, 0.9, 0.6)
@@ -44,6 +46,7 @@ Rectangle {
     property int heightval
     property int oldX
     property int oldY
+    property bool running: false;
 
     Item {
         width: 0.68 * root.width
@@ -150,7 +153,7 @@ Rectangle {
     }
 
     Text{
-        text: "Total time: " + commandsList.seconds + "s"
+        text: "Total time: " + Math.floor(parseFloat(commandsList.seconds) / 60) + "m " + (parseFloat(commandsList.seconds) - (60 * Math.floor(parseFloat(commandsList.seconds) / 60))) + "s"
 
         height: 0.05 * root.height
         width: 0.68 * root.width
@@ -213,17 +216,21 @@ Rectangle {
                         color: root.textColor
                     }
                     Button {
+                        id: delButton
                         Layout.fillWidth: true
                         Layout.fillHeight: true
                         Layout.preferredWidth: parent.width / 3
-                        text: "Delete"
+                        text: "DEL"
                         onClicked: {
                             commandsList.seconds -= parseFloat(model.duration);
                             taskModel.remove(index)
                             canvas.requestPaint()
                         }
 
-                        background: Rectangle {color: root.fieldsColor;}
+                        background: Rectangle {
+                                id: delButtonBackground
+                                color: delButton.hovered ? "black" : root.fieldsColor
+                            }
                         palette.buttonText: root.textColor
                     }
                 }
@@ -268,13 +275,17 @@ Rectangle {
         height: 0.08 * root.height
 
         Button {
+            id: addButton
             anchors.left: parent.left
             text: "Add Step"
             width: 0.45 * parent.width
             height: parent.height
             font.pixelSize: 0.2 * width
+            background: Rectangle {id: addButtonBackground; color: root.fieldsColor;}
+            palette.buttonText: root.textColor
+
             onClicked: {
-                if (power.text !== "") {
+                if (power.text !== "" && duration.text != "" && parseFloat(duration.text) > 0 && parseInt(power.text) >= 0 && parseInt(power.text) <= 100) {
                     taskModel.append({ "power" : power.text, "duration": duration.text })
                     commandsList.seconds += parseFloat(duration.text)
                     power.text = ""
@@ -282,20 +293,43 @@ Rectangle {
                     canvas.requestPaint()
                 }
             }
-
-            background: Rectangle {color: root.fieldsColor;}
-            palette.buttonText: root.textColor
         }
 
         Button {
+            id:runButton
             anchors.right: parent.right
             width: 0.45 * parent.width
             height: parent.height
             font.pixelSize: 0.2 * width
             text: "Run"
 
-            background: Rectangle {color: root.fieldsColor;}
+            background: Rectangle {id: runButtonBackground; color: root.fieldsColor;}
             palette.buttonText: root.textColor
+
+            onClicked: {
+                studyManager.onButtonClicked()
+            }
         }
+    }
+
+    states: [
+        State {
+            name: "addHovered"
+            when: addButton.hovered
+            PropertyChanges {
+                addButtonBackground.color: "black";
+            }
+        },
+        State {
+            name: "runHovered"
+            when: runButton.hovered
+            PropertyChanges {
+                runButtonBackground.color: "black";
+            }
+        }
+    ]
+
+    StudyManager {
+        id: studyManager
     }
 }

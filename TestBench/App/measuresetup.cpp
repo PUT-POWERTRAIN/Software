@@ -33,7 +33,7 @@ void measureSetup::setup()
 
 void measureSetup::updateReceivedMessage(int message1, int message2, int message3, int message4)
 {
-    qDebug() << "Received messages:" << message1 << message2 << message3 << message4;
+    //qDebug() << "Received messages:" << message1 << message2 << message3 << message4;
     rpm1 = message1;
 }
 
