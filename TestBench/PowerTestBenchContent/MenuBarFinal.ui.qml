@@ -39,15 +39,14 @@ Rectangle {
             id: overviewContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            Image {
                 id: overviewButtonIcon
-                height: parent.height
+                height: root.parent.height
                 source: "../speedometer.png"  // Ścieżka do ikony
-                color: "#ffffff"
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.top: parent.top
-                anchors.bottom: parent.bottom
+                anchors.left: root.parent.left
+                anchors.right: root.parent.right
+                anchors.top: root.parent.top
+                anchors.bottom: root.parent.bottom
                 anchors.rightMargin: 100
                 anchors.bottomMargin: 0
             }
@@ -85,11 +84,10 @@ Rectangle {
             id: controlButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            Image {
                 id: controlButtonIcon
                 height: parent.height
                 source: "../settings (2).png"  // Ścieżka do ikony
-                color: "#ffffff"
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.top: parent.top
@@ -130,11 +128,10 @@ Rectangle {
             id: dataButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            Image {
                 id: dataButtonIcon
                 height: parent.height
                 source: "../data.png"  // Ścieżka do ikony
-                color: "#ffffff"
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.top: parent.top
@@ -178,13 +175,12 @@ Rectangle {
             id: studyButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            Image {
                 id: studyButtonIcon
                 height: parent.height
                 source: "../analisys (4).png"
                 sourceSize.width: 32
                 sourceSize.height: 32  // Ścieżka do ikony
-                color: "#ffffff"
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.top: parent.top
@@ -222,13 +218,12 @@ Rectangle {
             id: settingsButtonContent
             anchors.fill: parent
             spacing: 0  // Odstęp pomiędzy ikoną a tekstem
-            IconImage {
+            Image {
                 id: settingsButtonIcon
                 height: parent.height
                 source: "../setting.png"
                 sourceSize.width: 32
                 sourceSize.height: 32  // Ścieżka do ikony
-                color: "#ffffff"
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.top: parent.top
