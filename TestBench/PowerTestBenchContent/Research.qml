@@ -285,12 +285,14 @@ Rectangle {
             palette.buttonText: root.textColor
 
             onClicked: {
-                if (power.text !== "" && duration.text != "" && parseFloat(duration.text) > 0 && parseInt(power.text) >= 0 && parseInt(power.text) <= 100) {
-                    taskModel.append({ "power" : power.text, "duration": duration.text })
-                    commandsList.seconds += parseFloat(duration.text)
-                    power.text = ""
-                    duration.text = ""
-                    canvas.requestPaint()
+                if (!root.running){
+                    if (power.text !== "" && duration.text != "" && parseFloat(duration.text) > 0 && parseInt(power.text) >= 0 && parseInt(power.text) <= 100) {
+                        taskModel.append({ "power" : power.text, "duration": duration.text })
+                        commandsList.seconds += parseFloat(duration.text)
+                        power.text = ""
+                        duration.text = ""
+                        canvas.requestPaint()
+                    }
                 }
             }
         }
@@ -301,13 +303,14 @@ Rectangle {
             width: 0.45 * parent.width
             height: parent.height
             font.pixelSize: 0.2 * width
-            text: "Run"
+            text: (root.runing) ? "Cancel" : "Run"
 
             background: Rectangle {id: runButtonBackground; color: root.fieldsColor;}
             palette.buttonText: root.textColor
 
             onClicked: {
-                studyManager.onButtonClicked()
+                studyManager.loadData(taskModel)
+                root.running = !root.running
             }
         }
     }
