@@ -7,8 +7,8 @@
 #include "qqmlextensionplugin.h"
 
 Q_IMPORT_QML_PLUGIN(Generated_QtQuick3D_Dron_V4__1_Plugin)
-Q_IMPORT_QML_PLUGIN(PowerTestBenchContentPlugin)
 Q_IMPORT_QML_PLUGIN(PowerTestBenchPlugin)
+Q_IMPORT_QML_PLUGIN(PowerTestBenchContentPlugin)
 
 const char mainQmlFile[] = "qrc:/qt/qml/PowerTestBenchContent/App.qml";
 
@@ -26,9 +26,9 @@ Q_IMPORT_QML_PLUGIN(QtQuick_Studio_EventSystemPlugin)
 #endif
 
 inline void set_qt_environment() {
-	qputenv("QML_COMPAT_RESOLVE_URLS_ON_ASSIGNMENT", "1");
-	qputenv("QT_AUTO_SCREEN_SCALE_FACTOR", "1");
-	qputenv("QT_ENABLE_HIGHDPI_SCALING", "0");
-	qputenv("QT_LOGGING_RULES", "qt.qml.connections=false");
-	qputenv("QT_QUICK_CONTROLS_CONF", ":/qtquickcontrols2.conf");
+    qputenv("QML_COMPAT_RESOLVE_URLS_ON_ASSIGNMENT", "1");
+    qputenv("QT_AUTO_SCREEN_SCALE_FACTOR", "1");
+    qputenv("QT_ENABLE_HIGHDPI_SCALING", "0");
+    qputenv("QT_LOGGING_RULES", "qt.qml.connections=false");
+    qputenv("QT_QUICK_CONTROLS_CONF", ":/qtquickcontrols2.conf");
 }

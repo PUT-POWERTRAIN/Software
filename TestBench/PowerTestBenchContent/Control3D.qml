@@ -153,6 +153,10 @@ Rectangle {
             id: rotateleftcirculararrowinterfacesymbol2
             width: parent.width * 0.7
             height: parent.height * 0.7
+
+
+
+            //color: "#ffffff"
             anchors.verticalCenter: parent.verticalCenter
 
             source: "images/rotate-left-circular-arrow-interface-symbol.png"
@@ -180,6 +184,11 @@ Rectangle {
             id: rotateleftcirculararrowinterfacesymbol
             width: parent.width * 0.7
             height: parent.height * 0.7
+
+
+
+            //color: "#ffffff"
+
             anchors.verticalCenter: parent.verticalCenter
 
             source: "images/rotate-left-circular-arrow-interface-symbol.png"

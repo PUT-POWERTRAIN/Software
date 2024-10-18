@@ -210,6 +210,10 @@ Rectangle {
         anchors.topMargin: 0
         anchors.bottomMargin: 0
         checkable: true
+        Connections {
+            target: settingsButton
+            onClicked: mainWindow.showSettingsMenu()
+        }
         background: Rectangle {
             id: settingsButtonBack
             gradient: defaultBackground.gradient

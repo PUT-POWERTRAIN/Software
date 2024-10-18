@@ -8,22 +8,22 @@ qt6_add_qml_module(PowerTestBenchContent
     URI "PowerTestBenchContent"
     VERSION 1.0
     RESOURCE_PREFIX "/qt/qml"
-	QML_FILES
-		"App.qml"
-		"MenuBarFinal.ui.qml"
-		"ControlMenu.qml"
-		"DataMenu.qml"
-		"DataMenu_saveType.qml"
-		"Battery.qml"
-		"Screen01.ui.qml"
-		"PlusMinusButtons.ui.qml"
-		"Research.qml"
-		"Control3D.qml"
-		"SpeedMeter.qml"
-		"images/ExitButton.ui.qml"
-	RESOURCES
-		"images/rotate-left-circular-arrow-interface-symbol.png"
-		"images/rect1.png"
+    QML_FILES
+        "ControlMenu.qml"
+        "Battery.qml"
+        "Screen01.ui.qml"
+        "PlusMinusButtons.ui.qml"
+        "DataMenu.qml"
+        "Control3D.qml"
+        "SpeedMeter.qml"
+        "Research.qml"
+        "App.qml"
+        "DataMenu_saveType.qml"
+        "MenuBarFinal.ui.qml"
+        "images/ExitButton.ui.qml"
+    RESOURCES
+        "images/rect1.png"
+        "images/rotate-left-circular-arrow-interface-symbol.png"
 )
 
 

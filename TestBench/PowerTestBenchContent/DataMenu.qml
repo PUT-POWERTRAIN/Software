@@ -130,7 +130,7 @@ Rectangle {
                     border.color: "white"
                     Text {
                         text: model.text
-                        font.pixelSize: 20                       
+                        font.pixelSize: 20
                         color: "white"
                         anchors.left: parent.left
                         anchors.leftMargin: 5
@@ -676,8 +676,6 @@ Rectangle {
     property int tempChart_max: 100
     property int ampChart_max: 100
     property int timer_max: 0
-
-
     ChartView {
             id: rpmChart
             width: 1492
@@ -826,8 +824,6 @@ Rectangle {
             width: 2
             XYPoint{x:0;y:0}
         }
-
-
     }
 
     DataMenu_saveType {
@@ -907,8 +903,8 @@ Rectangle {
         LineSeries{
             id:amp3
             name: "Amp3"
-            axisX:axisX3
-            axisY:axisY3
+            axisX:amp_axisX
+            axisY:amp_axisY
             color: "red"
             width: 2
             XYPoint{x:0;y:0}

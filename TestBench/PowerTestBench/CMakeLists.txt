@@ -2,8 +2,8 @@
 ### Do not change
 
 set_source_files_properties(Constants.qml
-	PROPERTIES
-		QT_QML_SINGLETON_TYPE true
+    PROPERTIES
+        QT_QML_SINGLETON_TYPE true
 )
 
 
@@ -13,11 +13,11 @@ qt6_add_qml_module(PowerTestBench
     URI "PowerTestBench"
     VERSION 1.0
     RESOURCE_PREFIX "/qt/qml"
-	QML_FILES
-		"DirectoryFontLoader.qml"
-		"Constants.qml"
-		"EventListModel.qml"
-		"EventListSimulator.qml"
+    QML_FILES
+        "Constants.qml"
+        "EventListModel.qml"
+        "EventListSimulator.qml"
+        "DirectoryFontLoader.qml"
 )
 
 

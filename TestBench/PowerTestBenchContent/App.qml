@@ -155,8 +155,10 @@ Window {
 
             SpeedMeter {
                 id: speedMeter
-                x: 0
-                y: 1
+                anchors.left: parent.left
+                anchors.top: parent.top
+                anchors.leftMargin: 0
+                anchors.topMargin: 1
             }
 
 
@@ -178,8 +180,14 @@ Window {
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
-
-
+            DataMenu
+            {
+                id: dataMenu
+                visible: false
+                color: "#000000"
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
 
 
             // Dron_V4__1_ {
@@ -246,19 +254,29 @@ Window {
         SpeedMeter {
             id: speedMeter1
             x: 1612
-            y: 69
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.rightMargin: 0
+            anchors.topMargin: 0
         }
 
         SpeedMeter {
             id: speedMeter2
             x: 1620
             y: 693
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.rightMargin: 0
+            anchors.bottomMargin: 85
         }
 
         SpeedMeter {
             id: speedMeter3
-            x: 0
             y: 713
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            anchors.leftMargin: 0
+            anchors.bottomMargin: 85
         }
     }
 
@@ -271,6 +289,10 @@ Window {
             controlMenu.visible = true
             control3D.visible = true
             battery.visible = true
+            speedMeter.visible=true
+            speedMeter1.visible=true
+            speedMeter2.visible=true
+            speedMeter3.visible=true
         }
         if (dataMenu.visible===true)
         {    
@@ -283,15 +305,27 @@ Window {
     }
 
     function showDataMenu() {
+        if (studyMenu.visible===true)
+        {
+            studyMenu.visible=false
+        }
         if (dataMenu.visible === true){
             dataMenu.visible = false
             control3D.visible = true
             battery.visible = true
+            speedMeter.visible=true
+            speedMeter1.visible=true
+            speedMeter2.visible=true
+            speedMeter3.visible=true
         }
         else{
             dataMenu.visible = true
             control3D.visible = false
             battery.visible = false
+            speedMeter.visible=false
+            speedMeter1.visible=false
+            speedMeter2.visible=false
+            speedMeter3.visible=false
         }
         if (controlMenu.visible===true)
         {
@@ -303,6 +337,10 @@ Window {
         }
     }   
     function showStudyMenu(){
+        if (studyMenu.visible===true)
+        {
+            studyMenu.visible=false
+        }
         if (studyMenu.visible===true)
         {
             studyMenu.visible=false
@@ -320,10 +358,18 @@ Window {
             dataMenu.visible=false
             control3D.visible = true
             battery.visible = true
+            speedMeter.visible=true
+            speedMeter1.visible=true
+            speedMeter2.visible=true
+            speedMeter3.visible=true
         }
     }
     function showOverviewMenu()
     {
+        if (studyMenu.visible===true)
+        {
+            studyMenu.visible=false
+        }
         if (controlMenu.visible === true){
             controlMenu.visible = false
         }
@@ -331,6 +377,33 @@ Window {
             dataMenu.visible = false
             control3D.visible = true
             battery.visible = true
+            speedMeter.visible=true
+            speedMeter1.visible=true
+            speedMeter2.visible=true
+            speedMeter3.visible=true
+        }
+        if (studyMenu.visible===true)
+        {
+            studyMenu.visible=false
+        }
+    }
+    function showSettingsMenu()
+    {
+        if (studyMenu.visible===true)
+        {
+            studyMenu.visible=false
+        }
+        if (controlMenu.visible === true){
+            controlMenu.visible = false
+        }
+        if (dataMenu.visible === true){
+            dataMenu.visible = false
+            control3D.visible = true
+            battery.visible = true
+            speedMeter.visible=true
+            speedMeter1.visible=true
+            speedMeter2.visible=true
+            speedMeter3.visible=true
         }
         if (studyMenu.visible===true)
         {
@@ -352,6 +425,6 @@ Window {
 
 /*##^##
 Designer {
-    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}
+    D{i:0}D{i:3;cameraSpeed3d:25;cameraSpeed3dMultiplier:1}D{i:9}D{i:17}D{i:19}
 }
 ##^##*/
