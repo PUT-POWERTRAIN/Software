@@ -16,7 +16,7 @@ set(QML_IMPORT_PATH ${QT_QML_OUTPUT_DIRECTORY}
     FORCE
 )
 
-find_package(Qt6 6.7 REQUIRED COMPONENTS Core Gui Qml Quick)
+find_package(Qt6 6.8 REQUIRED COMPONENTS Core Widgets Qml Quick)
 qt_standard_project_setup()
 
 
@@ -28,7 +28,7 @@ qt_add_resources(${CMAKE_PROJECT_NAME} "configuration"
     PREFIX "/"
     FILES
 		qtquickcontrols2.conf)
-
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE Qt6::Core Qt6::Widgets Qt6::Qml Qt6::Quick)
 include(qds)
 
 if (BUILD_QDS_COMPONENTS)
