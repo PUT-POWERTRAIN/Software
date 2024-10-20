@@ -222,14 +222,16 @@ Rectangle {
                         Layout.preferredWidth: parent.width / 3
                         text: "DEL"
                         onClicked: {
-                            commandsList.seconds -= parseFloat(model.duration);
-                            taskModel.remove(index)
-                            canvas.requestPaint()
+                            if (!root.running){
+                                commandsList.seconds -= parseFloat(model.duration);
+                                taskModel.remove(index)
+                                canvas.requestPaint()
+                            }
                         }
 
                         background: Rectangle {
                                 id: delButtonBackground
-                                color: delButton.hovered ? "black" : root.fieldsColor
+                                color: root.running ? "gray" : (delButton.hovered ? "black" : root.fieldsColor);
                             }
                         palette.buttonText: root.textColor
                     }
@@ -281,7 +283,7 @@ Rectangle {
             width: 0.45 * parent.width
             height: parent.height
             font.pixelSize: 0.2 * width
-            background: Rectangle {id: addButtonBackground; color: root.fieldsColor;}
+            background: Rectangle {id: addButtonBackground; color: root.running ? "gray" : (addButton.hovered ? "black" : root.fieldsColor);}
             palette.buttonText: root.textColor
 
             onClicked: {
@@ -303,36 +305,36 @@ Rectangle {
             width: 0.45 * parent.width
             height: parent.height
             font.pixelSize: 0.2 * width
-            text: (root.runing) ? "Cancel" : "Run"
+            text: "Run"
 
-            background: Rectangle {id: runButtonBackground; color: root.fieldsColor;}
+            background: Rectangle {id: runButtonBackground; color: runButton.hovered ? "black" : root.fieldsColor;}
             palette.buttonText: root.textColor
 
             onClicked: {
-                studyManager.loadData(taskModel)
-                root.running = !root.running
+                if (!root.running){
+                    studyManager.loadData(taskModel)
+                    studyManager.start()
+                }
+                else{
+                    studyManager.cancel();
+                }
             }
         }
     }
 
-    states: [
-        State {
-            name: "addHovered"
-            when: addButton.hovered
-            PropertyChanges {
-                addButtonBackground.color: "black";
-            }
-        },
-        State {
-            name: "runHovered"
-            when: runButton.hovered
-            PropertyChanges {
-                runButtonBackground.color: "black";
-            }
-        }
-    ]
-
     StudyManager {
         id: studyManager
+        onStudyFinished: {
+            root.running = false
+            runButton.text = "Run"
+        }
+        onCanceled: {
+            root.running = false
+            runButton.text = "Run"
+        }
+        onStarted: {
+            root.running = true
+            runButton.text = "Cancel"
+        }
     }
 }

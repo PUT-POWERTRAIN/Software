@@ -9,6 +9,10 @@
 
 Connection::Connection(QObject *parent) : QObject(parent){}
 
+const char* Connection::getCurrIP(){
+    return motorControlIP;
+}
+
 void Connection::motorSignalChangeTo(int sliderValue,int motorNumber){
     qDebug("elo");
     int value = 1000 + ((2000 - 1000) * sliderValue) / 100;

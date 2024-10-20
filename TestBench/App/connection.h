@@ -11,14 +11,16 @@ class Connection: public QObject
 public:
     explicit Connection(QObject *parent = nullptr);
     void changeMotorControlIPandPort(int motorControlPort, const char* motorControlIP);
+    const char* getCurrIP();
     void receiveUdpMessage();
     int motor1_rpm = 0;
 
 public slots:
     void motorSignalChangeTo(int sliderValue, int motorNumber);
 
-private:
+protected:
     std::array<int, 4> motorSignals = {1000, 1000, 1000, 1000};
+    int num_of_motors = 4;
     void sendUdpMessage();
     int motorControlPort = 12345;
     int measuringPort = 2390;
