@@ -29,7 +29,6 @@ private:
 
     QList<float> durations;
     QList<int> powers;
-    int curr_power;
     QTimer* timer;
     int arrIdx = 0;
     int numOfMotors = 4;
