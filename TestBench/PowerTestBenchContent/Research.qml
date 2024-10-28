@@ -322,15 +322,60 @@ Rectangle {
         }
     }
 
+    Rectangle{
+        id: popupWindow
+        anchors.fill: parent
+        color: Qt.rgba(0,0,0,0.7)
+        visible: false
+        MouseArea{
+            anchors.fill: parent
+        }
+        Rectangle{
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: 0.5 * parent.width
+            height: 0.5 * parent.height
+            color: Qt.rgba(0.2, 0.2, 0.2, 1)
+            radius: 0.03 * parent.width
+            border.color: Qt.rgba(0.1, 0.1, 0.1, 1)
+            border.width: 0.03 * width
+            Text {
+                id: popupText
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "Measure ended"
+                y: 0.3 * parent.height
+                font.pixelSize: 36
+            }
+            Button{
+                id: popupButton
+                anchors.horizontalCenter: parent.horizontalCenter
+                y: 0.65 * parent.height
+                text: "OK"
+                onClicked: popupWindow.visible = false
+
+                width: 0.4 * parent.width
+                height: 0.15 * parent.height
+
+                background: Rectangle {id: popubButtonBackground; color: popupButton.hovered ? "black" : "white";}
+            }
+        }
+    }
+
     StudyManager {
         id: studyManager
         onStudyFinished: {
             root.running = false
             runButton.text = "Run"
+
+            popupWindow.visible = true
+            popupText.text = "Measure ended"
         }
         onCanceled: {
             root.running = false
             runButton.text = "Run"
+
+            popupWindow.visible = true
+            popupText.text = "Measure canceled"
         }
         onStarted: {
             root.running = true
